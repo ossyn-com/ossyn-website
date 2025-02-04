@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Strategy',
-    Svg: require('@site/static/img/strategy.svg').default,
     description: (
       <>
         Navigate the complexities of open source with our expert guidance. 
@@ -18,7 +17,6 @@ const FeatureList = [
   },
   {
     title: 'Policies & Processes',
-    Svg: require('@site/static/img/policies-and-processes.svg').default,
     description: (
       <>
         Establish effective governance frameworks to promote compliance and collaboration. 
@@ -28,7 +26,6 @@ const FeatureList = [
   },
   {
     title: 'Trainings',
-    Svg: require('@site/static/img/trainings.svg').default,
     description: (
       <>
         Equip your team with essential skills through tailored training programs. 
@@ -38,12 +35,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
