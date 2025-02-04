@@ -24,7 +24,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ossyn-com', // Usually your GitHub org/user name.
   projectName: 'ossyn-website', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
